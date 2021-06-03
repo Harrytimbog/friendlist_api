@@ -35,7 +35,7 @@ class Api::V1::FriendsController < ApplicationController
   private
 
   def set_friend
-    @friend = friend.find(params[:id])
+    @friend = Friend.find(params[:id])
   end
 
   def friend_params
